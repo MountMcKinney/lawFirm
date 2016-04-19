@@ -1,0 +1,46 @@
+{% extends "main.twig" %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block head %}
+<script src="https://services.cognitoforms.com/s/SkK_LHLpKUmLPQLt_eXuZQ"></script>
+{% endblock head %}
+
+{% block jumbotron %}
+  <div class="jumbotronContact">
+    <h1 class="jumboHeader">Contact Us</h1>
+  </div>
+{% endblock jumbotron %}
+
+{% block content %}
+  <div class="pageContent">
+    <div class="content">
+      <h1>Hours</h1>
+      <ul class="contactDetails">
+        <li class="hours">Monday: 8-5:30pm</li>
+        <li class="hours">Tuesday: 8-5:30pm</li>
+        <li class="hours">Wednesday: 8-5:30pm</li>
+        <li class="hours">Thursday: 8-5:30pm</li>
+        <li class="hours">Friday: 8-5:30pm</li>
+        <li class="hours">Saturday & Sunday: Closed</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Contact Us</h1>
+      <div class="cognito">
+        <script>Cognito.load("forms", { id: "3" });</script>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Contact Details</h1>
+      <ul class="contactDetails">
+        <li class="contactLink">Phone: <a href="tel:555-555-5555">352-555-0191</a></li>
+        <li class="contactLink">Address: <a href="https://www.google.com/maps/place/3045+SW+Archer+Rd,+Gainesville,+FL+32608/@29.625652,-82.3791787,14z/data=!4m2!3m1!1s0x88e8a3231716d183:0x69c047c542ab2618?hl=en-US">3405 SW 34th St. Gainesville, FL 32608</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="contactMap">
+    <h1>Directions</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27745.953028925014!2d-82.37917872964255!3d29.625651999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a3231716d183%3A0x69c047c542ab2618!2s3045+SW+Archer+Rd%2C+Gainesville%2C+FL+32608!5e0!3m2!1sen!2sus!4v1459999129982" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+{% endblock content %}

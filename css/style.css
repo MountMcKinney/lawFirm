@@ -1,0 +1,556 @@
+/*----Universal----*/
+
+*{
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+}
+
+/*----Header----*/
+
+header{
+  margin-bottom: 3px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+  padding: 10px 0;
+}
+
+.logo {
+  text-align: right;
+  margin-right: 2%;
+  color: #263238;
+  float: right;
+}
+
+.logo h4 {
+  text-transform: uppercase;
+}
+
+.logoColor {
+  color: rgba(253, 216, 53, 0.8);
+}
+
+.logo h1, .logo h4, .logo span, .desktopMenu li, #developer {
+    font-family: 'Fugaz One', serif;
+}
+
+/*----Menu----*/
+
+a:link, a:visited {
+  color: #546E7A;
+  text-decoration: none;
+}
+a:hover, .logo a:link, .logo a:visited {
+  color: #263238;
+}
+
+.desktopMenu {
+  display: inline;
+}
+
+.desktopMenu li {
+  text-transform: uppercase;
+  list-style: none;
+  display: inline-block;
+  padding: 20px 10px;
+  margin-left: 5px;
+}
+
+#menuBtn, #menu, .mobileMenu {
+  display: none;
+}
+
+.desktopMenu ul {
+  padding-left: 0;
+}
+
+/*----Footer----*/
+
+footer {
+  clear:both;
+  text-align:center;
+  width:100%;
+  height:100%;
+  color:#263238;
+  padding-bottom: 40px;
+}
+
+#developer:hover {
+  color: rgba(253, 216, 53, 0.8);
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+}
+
+/*----Content----*/
+
+.jumbotron {
+  margin-bottom: 20px;
+  height: 600px;
+  background: #f6f6f6 url('../img/pt.jpg') center no-repeat;
+  background-size: cover;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+}
+
+.jumboHeader {
+  text-transform: uppercase;
+  text-align: center;
+  color: #263238;
+}
+
+h1.jumboHeader{
+  text-shadow: 1px 1px white;
+  font-size: 3rem;
+  background: rgba(38, 50, 56,0.5);
+  /*background: rgba(253, 216, 53, 0.8);*/
+  padding-bottom: 25px;
+  color: rgba(253, 216, 53, 0.8);
+}
+
+p.minitronHeader {
+  font-size: 1.2rem;
+  background: rgba(38, 50, 56, 0.5);
+  /* background: rgba(253, 216, 53, 0.8); */
+  padding: 2% 55px;
+  color: white;
+  text-shadow: 0px 2px 3px #263238;
+}
+
+p.minitronHeader:first-of-type {
+  padding-top: 10%;
+}
+
+.minitron {
+  background: #f6f6f6 url('../img/minitron.jpg') top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  text-align: center;
+}
+
+.homeContent li {
+  list-style: none;
+  display: inline-block;
+  max-width: 300px;
+  border: 1px solid rgba(0,0,0,0.4);
+  margin: 5rem 2rem;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.callout img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 20px 10px;
+}
+
+.mainContent li {
+  list-style: none;
+  display: inline-block;
+  max-width: 450px;
+  border: 1px solid rgba(0,0,0,0.4);
+  margin: 5rem 2rem;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.callout h2, .content h1, .contactMap h1 {
+  color: #263238;
+  background: rgba(253, 216, 53, 0.8);
+  font-size: 2rem;
+}
+
+.mainContent h2 {
+  color: rgba(253, 216, 53, 0.8);
+  background: rgba(38, 50, 56,0.75);
+}
+
+.callout p, .contactDetails li {
+  font-family: 'Lora', serif;
+}
+
+.callout p, .content p {
+  padding: 0 15px;
+}
+
+ul.homeContent, ul.mainContent {
+  padding-right: 40px;
+}
+
+.homeMain {
+  /*margin: 100px 0 150px;*/
+}
+
+/*----Contact Page----*/
+
+.jumbotronContact {
+  margin-bottom: 20px;
+  height: 650px;
+  background: #f6f6f6 url('../img/pt-clinic.jpg') center no-repeat;
+  background-size: cover;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+}
+
+.pageContent {
+  width: 80%;
+  margin: auto;
+}
+
+.content {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  border: 1px solid rgba(0,0,0,0.4);
+  margin: 5rem 2rem;
+  text-align: center;
+}
+
+ul.contactDetails {
+  padding-left: 0;
+}
+
+.content li {
+  list-style: none;
+}
+
+.hours, .contactLink {
+  font-size: 1.25rem;
+  margin: 20px 0;
+}
+
+.contactMap {
+  clear: both;
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  border: 1px solid rgba(0,0,0,0.4);
+  text-align: center;
+  margin: auto auto 100px;
+}
+
+.cognito form {
+  text-align: left;
+  margin: 0 60px;
+}
+
+.c-label label {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+#c-submit-button:hover {
+  background: rgba(253, 216, 53, 0.8);
+  color: #263238;
+}
+
+/*----About Page----*/
+
+.jumbotronAbout {
+  margin-bottom: 20px;
+  height: 650px;
+  background: #f6f6f6 url('../img/group.jpg') top no-repeat;
+  background-size: cover;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+}
+
+.about h1, .services h1, .homeMain h1 {
+  font-size: 6rem;
+  margin: 40px 0 30px;
+}
+
+.about h3, .homeMain h3 {
+  text-align: left;
+  margin: 50px 0 10px;
+  font-size: 1.7rem;
+}
+
+.about p, .homeMain p {
+  text-align: left;
+  line-height: 1.4;
+}
+
+.bio, .form {
+  text-align: center;
+}
+
+li.bio, li.form {
+  padding-bottom: 30px;
+}
+
+.bio img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 40px 10px;
+}
+
+ul.bioDetails, ul.formDetails {
+  margin-bottom: 100px;
+  padding-left: 0;
+}
+
+.bio h5 {
+  font-size: 2rem;
+  margin: -20px 0 0;
+}
+
+.bio h6 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+/*----Resources Page----*/
+
+.jumbotronResources {
+  margin-bottom: 40px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+}
+
+.jumbotronResources h1 {
+  background: rgba(38, 50, 56, 0.8);
+}
+
+.form img {
+  width: 300px;
+  padding: 40px 10px;
+}
+
+.form h5 {
+  font-size: 2rem;
+  margin: 20px 0 -20px;
+  color: #263238;
+  padding: 20px 0 0;
+}
+
+.alternatingRows {
+  background: #546E7A;
+}
+
+.alternatingRows h5 {
+  color: rgba(253, 216, 53, 0.8);
+}
+
+/*----Services Page----*/
+
+.services {
+  margin: 0 0 80px;
+}
+
+.services li {
+  line-height: 2;
+  font-size: 1.25rem;
+  list-style: none;
+}
+
+.services h3 {
+  border-bottom: 3px solid #263238;
+  background: rgba(253, 216, 53, 0.8);
+  padding: 5px 50px;
+  font-size: 2rem;
+}
+
+.servicesContent {
+  margin: 5rem 2rem;
+  text-align: center;
+}
+
+.servicesContent ul {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 840px) {
+  header {
+    padding: 10px 0 70px;
+  }
+
+  h1.jumboHeader {
+    font-size: 1.6rem;
+  }
+
+  .menuBtn div {
+  	position: relative;
+  	left: 100%;
+  	top: 64%;
+  	line-height: 1.2;
+  	font-size: 18px;
+  	font-weight: 200;
+  	vertical-align: middle;
+  	z-index: 99;
+  }
+
+  .menuBtn span {
+  	display: block;
+  	width: 32px;
+  	height: 3px;
+  	margin: 6px 13px;
+  	background: #263238;
+  	z-index: 99;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  #menubar {
+    width:100%;
+    background-color:white;
+    padding: 10px;
+  }
+
+  .menuBtn {
+    cursor:pointer;
+    float: left;
+  }
+
+  .mobileMenu {
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #263238;
+	z-index: 100;
+  display: block;
+}
+
+  .mobileMenu h3 {
+    position: relative;
+    padding: 15px 10px;
+    color: #fff;
+    font-size: 1.8em;
+    border-bottom: 5px solid rgba(253, 216, 53, 0.8);
+  }
+
+  .mobileMenu a:link, .mobileMenu a:hover, .mobileMenu a:visited {
+    color: rgba(253, 216, 53, 0.8);
+  }
+
+  .mobileMenu .mobileMenuToggle {
+  	position: absolute;
+  	top: 12px;
+  	right: 10px;
+  	display: inline-block;
+  	padding: 6px 9px 5px;
+  	font-family: Arial, sans-serif;
+  	font-weight: bold;
+  	line-height: 1;
+  	background: #222;
+  	color: #999;
+  	text-decoration: none;
+  	vertical-align: top;
+  }
+
+  .mobileMenu ul {
+  	list-style: none;
+    padding-left: 0;
+  	border-top: 1px solid #151515;
+  	border-bottom: 1px solid #454545;
+  }
+
+  .mobileMenu ul li {
+  	border-top: 1px solid #454545;
+  	border-bottom: 1px solid #151515;
+    padding: 13px;
+    font-size: 1.2rem;
+  }
+
+  .mobileMenu ul li:hover {
+    background: rgba(253, 216, 53, 0.8);
+  }
+
+  .mobileMenu a:hover {
+    color: #263238;
+  }
+
+  .mobileMenu ul li a {
+  	position: relative;
+  	display: block;
+  	color: #999;
+  	text-decoration: none;
+  }
+
+  /*.mobileMenu ul li a i {
+  	position: absolute;
+  	top: 15px;
+  	right: 10px;
+  	opacity: .5;
+  }*/
+
+  .about h1, .services h1, .homeMain h1 {
+    font-size: 3rem;
+  }
+
+  .homeMain h3, .homeMain p {
+    text-align: center;
+  }
+
+  .mainContent li {
+    margin: 5rem 0;
+  }
+
+  p.minitronHeader {
+    font-size: 1.1rem;
+    padding: 5% 25px;
+    color: rgba(253, 216, 53, 0.8);
+  }
+
+  .homeContent li {
+    margin: 3.5rem 0;
+    max-width: 600px;
+  }
+
+  .callout img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .services h3 {
+    border-bottom: 3px solid #263238;
+    background: rgba(253, 216, 53, 0.8);
+    padding: 5px 30px;
+    font-size: 1.7rem;
+  }
+
+  .services li {
+    font-size: 1rem;
+  }
+
+  .bio img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .jumbotronContact {
+    height: 200px;
+  }
+
+  .jumbotronAbout, .jumbotron:first-of-type {
+    height: 300px;
+  }
+
+  .contactLink {
+    font-size: 1rem;
+  }
+
+  .cognito form {
+    text-align: left;
+    margin: 0 10px;
+  }
+
+  .content, .servicesContent {
+    margin: 5rem 0rem;
+  }
+
+  .about h3 {
+    text-align: center;
+  }
+
+  .about p, .homeMain p {
+    text-align: justify;
+  }
+}

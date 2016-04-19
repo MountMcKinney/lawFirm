@@ -1,0 +1,72 @@
+<!doctype html>
+{% block html %}<html lang="en">{% endblock html %}
+  <head>
+      <link rel="shortcut icon" href="{{ baseUrl }}img/favicon.ico">
+      <title>NeuroFit | {% block title %}Home{% endblock title %}</title>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu|Lora|Fugaz+One' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="{{ baseUrl }}css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> -->
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+      <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/js/iframe/setmore_iframe.js"></script>
+      <script src="../js/app.js"></script>
+      {% block head %}
+      {% endblock head %}
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+          <a href="{{siteUrl('/home')}}"><h1>Neuro<span class="logoColor">Fit</span></h1>
+          <h4>Adaptive Fitness Studio</h4></a>
+        </div>
+        <div id="menubar">
+            <div class="menuBtn">
+                 <div></div>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobileMenu">
+        	<h3>Menu <a href="#" class="mobileMenuToggle menuBtn">×</a></h3>
+          	<ul>
+                <a href="{{siteUrl('/home')}}"><li>Home</li></a>
+                <a id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/shortBookingPage/cbd39e8e-6549-48ff-9675-c0bdf4d081c7"><li>Schedule</li></a>
+                <a href="{{siteUrl('/services')}}"><li>Services</li></a>
+                <a href="{{siteUrl('/resources')}}"><li>Resources</li></a>
+                <a href="{{siteUrl('/contact')}}"><li>Contact</li></a>
+                <a href="{{siteUrl('/about')}}"><li>About</li></a>
+              </ul>
+          </div>
+
+          <!-- desktop menu -->
+        <div class="desktopMenu">
+          <ul>
+            <a href="{{siteUrl('/home')}}"><li>Home</li></a>
+            <a id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/shortBookingPage/cbd39e8e-6549-48ff-9675-c0bdf4d081c7"><li>Schedule</li></a>
+            <a href="{{siteUrl('/services')}}"><li>Services</li></a>
+            <a href="{{siteUrl('/resources')}}"><li>Resources</li></a>
+            <a href="{{siteUrl('/contact')}}"><li>Contact</li></a>
+            <a href="{{siteUrl('/about')}}"><li>About</li></a>
+          </ul>
+        </div>
+    </header>
+    <main>
+      {% block jumbotron %}
+      {% endblock jumbotron %}
+      <div class="wrapper">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </main>
+    {% block footer %}
+      <footer>
+        <p><a href="http://mountmckinney.com" id="developer">&copy;{{ "now"|date("Y") }} Mount McKinney</a></p>
+        <a href="http://facebook.com/mountmckinney" class="social" id="facebookIcon"><img src="{{ baseUrl }}img/facebook-icon.svg"></a>
+        <a href="http://twitter.com/mountmckinney" class="social" id="twitterIcon"><img src="{{ baseUrl }}img/twitter-icon.svg"></a>
+        <a href="http://instagram.com/mountmckinney" class="social" id="instagramIcon"><img src="{{ baseUrl }}img/instagram-icon.svg"></a>
+      </footer>
+    {% endblock footer %}
+  </body>
+</html>
