@@ -30,13 +30,13 @@
         $app->render('contact.twig');
       })->name('contact');
 
-      $app->get('/services', function() use($app){
-        $app->render('services.twig');
-      })->name('services');
+      $app->get('/practice-areas', function() use($app){
+        $app->render('practice-areas.twig');
+      })->name('practice-areas');
 
-      $app->get('/resources', function() use($app){
-        $app->render('resources.twig');
-      })->name('resources');
+      $app->get('/our-attorneys', function() use($app){
+        $app->render('our-attorneys.twig');
+      })->name('our-attorneys');
 
       $app->get('/about', function() use($app){
         $app->render('about.twig');

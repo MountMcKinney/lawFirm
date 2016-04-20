@@ -2,8 +2,8 @@
 {% block html %}<html lang="en">{% endblock html %}
   <head>
       <link rel="shortcut icon" href="{{ baseUrl }}img/favicon.ico">
-      <title>NeuroFit | {% block title %}Home{% endblock title %}</title>
-      <link href='https://fonts.googleapis.com/css?family=Ubuntu|Lora|Fugaz+One' rel='stylesheet' type='text/css'>
+      <title>White, Wyne, and Bree | {% block title %}Home{% endblock title %}</title>
+      <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="{{ baseUrl }}css/style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> -->
@@ -14,11 +14,22 @@
       {% endblock head %}
   </head>
   <body>
-    <header>
-        <div class="logo">
-          <a href="{{siteUrl('/home')}}"><h1>Neuro<span class="logoColor">Fit</span></h1>
-          <h4>Adaptive Fitness Studio</h4></a>
+    {% block background %}
+    {% endblock background %}
+      <header>
+        <div class="header">
+          <div class="logo">
+            <a href="{{siteUrl('/home')}}"><h1>My Logo Here!</h1>
+            <h4>White, Wyne, and Bree</h4></a>
+          </div>
+          <div class="callUs">
+            <h1>Free Consulation</h1>
+            <h4><a href="tel:904-555-8432">904-555-8432</h4>
+            <h4><a href="mailto:info@mountmckinney.com" class="social"><img src="{{ baseUrl }}img/mail.svg" alt="Mail icon" /></a></h4>
+          </div>
         </div>
+      </header>
+      <nav>
         <div id="menubar">
             <div class="menuBtn">
                  <div></div>
@@ -31,12 +42,11 @@
         <div class="mobileMenu">
         	<h3>Menu <a href="#" class="mobileMenuToggle menuBtn">×</a></h3>
           	<ul>
-                <a href="{{siteUrl('/home')}}"><li>Home</li></a>
-                <a id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/shortBookingPage/cbd39e8e-6549-48ff-9675-c0bdf4d081c7"><li>Schedule</li></a>
-                <a href="{{siteUrl('/services')}}"><li>Services</li></a>
-                <a href="{{siteUrl('/resources')}}"><li>Resources</li></a>
-                <a href="{{siteUrl('/contact')}}"><li>Contact</li></a>
-                <a href="{{siteUrl('/about')}}"><li>About</li></a>
+              <a href="{{siteUrl('/home')}}"><li>Home</li></a>
+              <a href="{{siteUrl('/practice-areas')}}"><li>Practice Areas</li></a>
+              <a href="{{siteUrl('/our-attorneys')}}"><li>Our Attorneys</li></a>
+              <a href="{{siteUrl('/contact')}}"><li>Contact</li></a>
+              <a href="{{siteUrl('/about')}}"><li>About The Firm</li></a>
               </ul>
           </div>
 
@@ -44,14 +54,16 @@
         <div class="desktopMenu">
           <ul>
             <a href="{{siteUrl('/home')}}"><li>Home</li></a>
-            <a id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/shortBookingPage/cbd39e8e-6549-48ff-9675-c0bdf4d081c7"><li>Schedule</li></a>
-            <a href="{{siteUrl('/services')}}"><li>Services</li></a>
-            <a href="{{siteUrl('/resources')}}"><li>Resources</li></a>
+            <a href="{{siteUrl('/practice-areas')}}"><li>Practice Areas</li></a>
+            <a href="{{siteUrl('/our-attorneys')}}"><li>Our Attorneys</li></a>
             <a href="{{siteUrl('/contact')}}"><li>Contact</li></a>
-            <a href="{{siteUrl('/about')}}"><li>About</li></a>
+            <a href="{{siteUrl('/about')}}"><li>About The Firm</li></a>
           </ul>
         </div>
-    </header>
+      </nav>
+    {% block backgroundBottom %}
+    </div>
+    {% endblock backgroundBottom %}
     <main>
       {% block jumbotron %}
       {% endblock jumbotron %}

@@ -1,14 +1,22 @@
 {% extends "main.twig" %}
 
 {% block head %}
-<script src="https://services.cognitoforms.com/s/SkK_LHLpKUmLPQLt_eXuZQ"></script>
+  <script src="https://services.cognitoforms.com/s/SkK_LHLpKUmLPQLt_eXuZQ"></script>
 {% endblock head %}
 
-{% block jumbotron %}
-  <div class="jumbotron">
-    <h1 class="jumboHeader">NeuroFit</h1>
+{% block background %}
+  <div class="background">
+{% endblock background %}
+
+{% block backgroundBottom %}
+    <div class="mainH1">
+      <h1>Contact Us</h1>
+      <div class="cognito">
+        <script>Cognito.load("forms", { id: "4" });</script>
+      </div>
+    </div>
   </div>
-{% endblock jumbotron %}
+{% endblock backgroundBottom %}
 
 {% block content %}
   <div class="homeMain">
@@ -28,11 +36,6 @@
       <p>We&#39;d like to thank all who came out and made last month&#39;s <a href="#">Walk For All</a> fundraiser a great success!</p>
     </li>
   </ul>
-  <div class="jumbotron minitron">
-    <h1 class="jumboHeader">Why Us?</h1>
-    <p class="minitronHeader">We believe that NeuroFit can meet the need for easing the transition from physical therapy to independent exercise for a healthy lifestyle. Each client will be evaluated by a licensed physical therapist prior to the initiation of an exercise program with one of our personal trainers who have been certified to work with special populations.</p>
-    <p class="minitronHeader">Our clients will then work with a personal trainer each time they come to our facility, receiving the one-on-one specialized attention they need to meet their fitness goals safely. NeuroFit also offers group fitness classes adapted to the unique needs of the neurologic population and with the enhanced supervision that is necessary to increase the safety of our clients.</p>
-  </div>
   <ul class="homeContent">
     <li class="callout">
       <h2>Membership</h2>
