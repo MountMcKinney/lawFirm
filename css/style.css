@@ -36,8 +36,8 @@ header {
   text-transform: uppercase;
 }
 
-.logo h1, .logo h4, .logo span, .desktopMenu li, #developer, .callUs h1, .callUs h4 {
-    font-family: 'Raleway', serif;
+.logo h1, .logo h4, .logo span, .desktopMenu li, #developer, .callUs h1, .callUs h4, .mainH1 h1 {
+    font-family: 'Raleway', sans-serif;
 }
 
 .callUs {
@@ -120,77 +120,33 @@ footer p {
 .mainH1 {
   text-align: center;
   margin: 10% auto;
-  width: 600px;
+  width: 70%;
   background-color: rgba(0,0,0,0.7);
   color: #fff;
 }
 
 .mainH1 h1 {
   text-transform: capitalize;
+  padding: 10px 0 50px;
 }
 
 .mainH1 label {
   color: #fff !important;
 }
 
+.cognito {
+  margin: 0 10%;
+}
+
 .wrapper {
-  max-width: 1200px;
+  max-width: 90%;
   margin: auto;
-  padding-left: 1.3rem;
-  padding-right: 1.3rem;
-  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.homeContent li {
-  list-style: none;
-  display: inline-block;
-  max-width: 300px;
-  border: 1px solid rgba(0,0,0,0.4);
-  margin: 5rem 2rem;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
-}
-
-.callout img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  padding: 20px 10px;
-}
-
-.mainContent li {
-  list-style: none;
-  display: inline-block;
-  max-width: 450px;
-  border: 1px solid rgba(0,0,0,0.4);
-  margin: 5rem 2rem;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
-}
-
-.callout h2, .content h1, .contactMap h1 {
-  color: #263238;
-  background: rgba(253, 216, 53, 0.8);
-  font-size: 2rem;
-}
-
-.mainContent h2 {
-  color: rgba(253, 216, 53, 0.8);
-  background: rgba(38, 50, 56,0.75);
-}
-
-.callout p, .contactDetails li {
-  font-family: 'Lora', serif;
-}
-
-.callout p, .content p {
-  padding: 0 15px;
-}
-
-ul.homeContent, ul.mainContent {
-  padding-right: 40px;
-}
-
-.homeMain {
-  /*margin: 100px 0 150px;*/
+.homeSecondary {
+  margin-bottom: 40px;
 }
 
 /*----Contact Page----*/
@@ -263,18 +219,17 @@ ul.contactDetails {
 }
 
 .about h1, .services h1, .homeMain h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   margin: 40px 0 30px;
+  color: #2d5c88;
 }
 
-.about h3, .homeMain h3 {
-  text-align: left;
+.about h3, .homeMain h3, .homeSecondary h3 {
   margin: 50px 0 10px;
   font-size: 1.7rem;
 }
 
-.about p, .homeMain p {
-  text-align: left;
+.about p, .homeMain p, .homeSecondary p {
   line-height: 1.4;
 }
 
@@ -489,7 +444,7 @@ ul.bioDetails, ul.formDetails {
     font-size: 3rem;
   }
 
-  .homeMain h3, .homeMain p {
+  .homeMain h3, .homeMain p, .homeSecondary p {
     text-align: center;
   }
 
