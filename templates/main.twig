@@ -73,10 +73,18 @@
     </main>
     {% block footer %}
       <footer>
+        <div class="desktopMenu">
+          <ul>
+            <a href="{{siteUrl('/home')}}"><li>Home</li></a>
+            <a href="{{siteUrl('/practice-areas')}}"><li>Practice Areas</li></a>
+            <a href="{{siteUrl('/our-attorneys')}}"><li>Our Attorneys</li></a>
+            <a href="{{siteUrl('/contact')}}"><li>Contact</li></a>
+            <a href="{{siteUrl('/about')}}"><li>About The Firm</li></a>
+          </ul>
+        </div>
         <p><a href="http://mountmckinney.com" id="developer">&copy;{{ "now"|date("Y") }} Mount McKinney</a></p>
         <a href="http://facebook.com/mountmckinney" class="social" id="facebookIcon"><img src="{{ baseUrl }}img/facebook-icon.svg"></a>
         <a href="http://twitter.com/mountmckinney" class="social" id="twitterIcon"><img src="{{ baseUrl }}img/twitter-icon.svg"></a>
-        <a href="http://instagram.com/mountmckinney" class="social" id="instagramIcon"><img src="{{ baseUrl }}img/instagram-icon.svg"></a>
       </footer>
     {% endblock footer %}
   </body>

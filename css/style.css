@@ -94,8 +94,12 @@ footer {
   text-align:center;
   width:100%;
   height:100%;
-  padding: 40px 0;
+  padding-bottom: 40px;
   background-color: rgba(0,0,0,0.8)
+}
+
+footer .desktopMenu {
+  margin-bottom: 40px;
 }
 
 footer p {
@@ -145,8 +149,46 @@ footer p {
   padding-right: 1rem;
 }
 
+.about h1, .services h1, .homeMain h1 {
+  font-size: 3rem;
+  margin: 40px 0 30px;
+  color: #2d5c88;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about h3, .homeMain h3, .homeSecondary h3 {
+  margin: 50px 0 10px;
+  font-size: 1.7rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about p, .homeMain p, .homeSecondary p {
+  line-height: 1.4;
+}
+
 .homeSecondary {
-  margin-bottom: 40px;
+  margin: 40px 0;
+}
+
+.homeSecondary h1 {
+  font-size: 2.5rem;
+  color: #2d5c88;
+  font-family: 'Raleway', sans-serif;
+}
+
+.homeSecondary a:link, .homeSecondary a:visited {
+  color: #000;
+}
+
+.homeSecondary a:hover {
+  color: #2d5c88;
+}
+
+a.readMore:link, a.readMore:visited {
+  font-family: georgia;
+  margin-left: 30px;
+  color: #2d5c88;
+  text-decoration: underline;
 }
 
 /*----Contact Page----*/
@@ -216,21 +258,6 @@ ul.contactDetails {
   background: #f6f6f6 url('../img/group.jpg') top no-repeat;
   background-size: cover;
   box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
-}
-
-.about h1, .services h1, .homeMain h1 {
-  font-size: 3rem;
-  margin: 40px 0 30px;
-  color: #2d5c88;
-}
-
-.about h3, .homeMain h3, .homeSecondary h3 {
-  margin: 50px 0 10px;
-  font-size: 1.7rem;
-}
-
-.about p, .homeMain p, .homeSecondary p {
-  line-height: 1.4;
 }
 
 .bio, .form {
