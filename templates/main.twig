@@ -2,7 +2,7 @@
 {% block html %}<html lang="en">{% endblock html %}
   <head>
       <link rel="shortcut icon" href="{{ baseUrl }}img/favicon.ico">
-      <title>White, Wyne, and Bree | {% block title %}Home{% endblock title %}</title>
+      <title>{% block title %}Home{% endblock title %} - WWB</title>
       <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="{{ baseUrl }}css/style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
       <header>
         <div class="header">
           <div class="logo">
-            <a href="{{siteUrl('/home')}}"><h1>My Logo Here!</h1>
+            <a href="{{siteUrl('/home')}}"><h1>WWB</h1>
             <h4>White, Wyne, and Bree</h4></a>
           </div>
           <div class="callUs">
@@ -83,8 +83,6 @@
           </ul>
         </div>
         <p><a href="http://mountmckinney.com" id="developer">&copy;{{ "now"|date("Y") }} Mount McKinney</a></p>
-        <a href="http://facebook.com/mountmckinney" class="social" id="facebookIcon"><img src="{{ baseUrl }}img/facebook-icon.svg"></a>
-        <a href="http://twitter.com/mountmckinney" class="social" id="twitterIcon"><img src="{{ baseUrl }}img/twitter-icon.svg"></a>
       </footer>
     {% endblock footer %}
   </body>

@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-  font-family: georgia, serif;
+  font-family: 'Raleway', sans-serif;', serif;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
   background: #454545 url("../img/courthouse.jpg") no-repeat top;
   height: 900px;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
@@ -32,11 +33,15 @@ header {
   float: left;
 }
 
+.logo h1 {
+  font-size: 4rem;
+}
+
 .logo h4, .callUs h4 {
   text-transform: uppercase;
 }
 
-.logo h1, .logo h4, .logo span, .desktopMenu li, #developer, .callUs h1, .callUs h4, .mainH1 h1 {
+.logo h1, .logo h4, .logo span, .desktopMenu li, #developer, .callUs h1, .callUs h4, .mainH1 h1, .contactH1 h1, .officeInfo h1 {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -50,13 +55,13 @@ header {
 /*----Menu----*/
 
 a:link, a:visited {
-  color: #2d5c88;
+  color: #fff;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
 
-a:hover, .logo a:link, .logo a:visited {
-  color: white;
+.callUs a:hover {
+  color: #2d5c88;
 }
 
 .mobileMenu li:hover, .desktopMenu li:hover {
@@ -94,16 +99,16 @@ footer {
   text-align:center;
   width:100%;
   height:100%;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   background-color: rgba(0,0,0,0.8)
 }
 
 footer .desktopMenu {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 footer p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #developer {
@@ -119,7 +124,7 @@ footer p {
   height: 40px;
 }
 
-/*----Content----*/
+/*----Home Page----*/
 
 .mainH1 {
   text-align: center;
@@ -134,7 +139,7 @@ footer p {
   padding: 10px 0 50px;
 }
 
-.mainH1 label {
+.mainH1 label, .contactH1 label {
   color: #fff !important;
 }
 
@@ -185,52 +190,77 @@ footer p {
 }
 
 a.readMore:link, a.readMore:visited {
-  font-family: georgia;
+  font-family: 'Raleway', sans-serif;;
   margin-left: 30px;
   color: #2d5c88;
   text-decoration: underline;
 }
 
+/*----Our Attorneys Page----*/
+
+
+
+/*----Practice Areas Page----*/
+
+
+
 /*----Contact Page----*/
 
-.jumbotronContact {
+.backgroundContact {
   margin-bottom: 20px;
-  height: 650px;
-  background: #f6f6f6 url('../img/pt-clinic.jpg') center no-repeat;
+  height: 800px;
+  background: #f6f6f6 url('../img/officespace.jpg') top no-repeat;
   background-size: cover;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
 }
 
-.pageContent {
-  width: 80%;
-  margin: auto;
+.backgroundCover {
+  background-color: rgba(45,92,136,0.5);
+  padding: 1px;
 }
 
-.content {
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
-  border: 1px solid rgba(0,0,0,0.4);
-  margin: 5rem 2rem;
+.contactH1 {
   text-align: center;
+  margin: 2.35% auto;
+  width: 70%;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+}
+
+.contactH1 h1 {
+  text-transform: capitalize;
+  padding: 10px 0 50px;
+}
+
+.contactLink a:link, .contactLink a:visited {
+  color: #2d5c88;
 }
 
 ul.contactDetails {
   padding-left: 0;
 }
 
-.content li {
-  list-style: none;
+.officeInfo {
+  width: 50%;
+  margin: 70px auto;
+  text-align: center;
 }
 
-.hours, .contactLink {
-  font-size: 1.25rem;
-  margin: 20px 0;
+.contactLink {
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+.officeInfo h1, .contactH1 h1, .contactMap h1 {
+  font-size: 3rem;
+}
+
+.officeInfo h1, .contactMap h1 {
+  border-bottom: 1px solid #2d5c88;
 }
 
 .contactMap {
   clear: both;
-  width: 80%;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
-  border: 1px solid rgba(0,0,0,0.4);
+  width: 70%;
   text-align: center;
   margin: auto auto 100px;
 }
@@ -245,109 +275,20 @@ ul.contactDetails {
   line-height: 1.4;
 }
 
-#c-submit-button:hover {
-  background: rgba(253, 216, 53, 0.8);
-  color: #263238;
-}
-
 /*----About Page----*/
 
-.jumbotronAbout {
+.backgroundAbout {
   margin-bottom: 20px;
-  height: 650px;
-  background: #f6f6f6 url('../img/group.jpg') top no-repeat;
+  height: 350px;
+  background: #f6f6f6 url('../img/lawBuilding.jpg') top no-repeat;
   background-size: cover;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
 }
 
-.bio, .form {
-  text-align: center;
-}
-
-li.bio, li.form {
-  padding-bottom: 30px;
-}
-
-.bio img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  padding: 40px 10px;
-}
-
-ul.bioDetails, ul.formDetails {
+.about {
   margin-bottom: 100px;
-  padding-left: 0;
 }
 
-.bio h5 {
-  font-size: 2rem;
-  margin: -20px 0 0;
-}
-
-.bio h6 {
-  margin-bottom: 20px;
-  font-size: 1.25rem;
-}
-
-/*----Resources Page----*/
-
-.jumbotronResources {
-  margin-bottom: 40px;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
-}
-
-.jumbotronResources h1 {
-  background: rgba(38, 50, 56, 0.8);
-}
-
-.form img {
-  width: 300px;
-  padding: 40px 10px;
-}
-
-.form h5 {
-  font-size: 2rem;
-  margin: 20px 0 -20px;
-  color: #263238;
-  padding: 20px 0 0;
-}
-
-.alternatingRows {
-  background: #546E7A;
-}
-
-.alternatingRows h5 {
-  color: rgba(253, 216, 53, 0.8);
-}
-
-/*----Services Page----*/
-
-.services {
-  margin: 0 0 80px;
-}
-
-.services li {
-  line-height: 2;
-  font-size: 1.25rem;
-  list-style: none;
-}
-
-.services h3 {
-  border-bottom: 3px solid #263238;
-  background: rgba(253, 216, 53, 0.8);
-  padding: 5px 50px;
-  font-size: 2rem;
-}
-
-.servicesContent {
-  margin: 5rem 2rem;
-  text-align: center;
-}
-
-.servicesContent ul {
-  padding-left: 0;
-}
+/*----Media----*/
 
 @media screen and (max-width: 840px) {
   header {
@@ -422,7 +363,7 @@ ul.bioDetails, ul.formDetails {
   	right: 10px;
   	display: inline-block;
   	padding: 6px 9px 5px;
-  	font-family: Arial, sans-serif;
+  	font-family: 'Raleway', sans-serif;
   	font-weight: bold;
   	line-height: 1;
   	background: #222;
@@ -506,29 +447,16 @@ ul.bioDetails, ul.formDetails {
     font-size: 1rem;
   }
 
-  .bio img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .jumbotronContact {
-    height: 200px;
-  }
-
-  .jumbotronAbout, .jumbotron:first-of-type {
-    height: 300px;
-  }
-
-  .contactLink {
+  /*.contactLink {
     font-size: 1rem;
-  }
+  }*/
 
   .cognito form {
     text-align: left;
     margin: 0 10px;
   }
 
-  .content, .servicesContent {
+  .servicesContent {
     margin: 5rem 0rem;
   }
 
