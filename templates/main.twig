@@ -16,19 +16,6 @@
     {% block background %}
     {% endblock background %}
       <header>
-        <div class="header">
-          <div class="logo">
-            <a href="{{siteUrl('/home')}}"><h1>WWB</h1>
-            <h4>White, Wyne, and Bree</h4></a>
-          </div>
-          <div class="callUs">
-            <h1>Call Us</h1>
-            <h4><a href="tel:904-555-8432">904-555-8432</h4>
-            <!-- <h4><a href="mailto:info@mountmckinney.com" class="social"><img src="{{ baseUrl }}img/mail.svg" alt="Mail icon" /></a></h4> -->
-          </div>
-        </div>
-      </header>
-      <nav>
         <div id="menubar">
             <div class="menuBtn">
                  <div></div>
@@ -48,7 +35,18 @@
               <a href="{{siteUrl('/about')}}"><li>About The Firm</li></a>
               </ul>
           </div>
-
+        <div class="header">
+          <div class="logo">
+            <a href="{{siteUrl('/home')}}"><h1><img src="{{ baseURL }}/img/wwbLogoWhite.svg" alt="Logo" /></h1>
+            <h4>White, Wyne, and Bree</h4></a>
+          </div>
+          <div class="callUs">
+            <h4>Call Us: <span><a href="tel:904-555-8432">904-555-8432</a></span></h4>
+            <!-- <h4><a href="mailto:info@mountmckinney.com" class="social"><img src="{{ baseUrl }}img/mail.svg" alt="Mail icon" /></a></h4> -->
+          </div>
+        </div>
+      </header>
+      <nav>
           <!-- desktop menu -->
         <div class="desktopMenu">
           <ul>
