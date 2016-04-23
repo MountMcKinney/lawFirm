@@ -404,6 +404,10 @@ ul.contactDetails {
     color: #fff;
   }
 
+  a.mobileMenuToggle:hover {
+  color: #2d5c88;
+  }
+
   .mobileMenu ul li a {
   	position: relative;
   	display: block;
